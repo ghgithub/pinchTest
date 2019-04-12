@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+      <ion-buttons left>
+          <button ion-button (click)="close()" class="bar-button-close"><ion-icon name="close"></ion-icon></button>
+          <button class="button-qr-scanner" ion-button clear (click)="scan()"><ion-icon name="qr-scanner"></ion-icon></button>
+        </ion-buttons>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <iframe #afterbook class="afterbook" frameborder="0" src="assets/pdfjs/web/viewer.html?file=../../pdf/Entwurf.pdf" zooming="true"
+  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</ion-content>
